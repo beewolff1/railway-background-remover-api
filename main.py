@@ -5,7 +5,8 @@ import io
 
 app = FastAPI()
 
-session = new_session(model_name="u2net", model_path="models/u2net.onnx")
+# session = new_session(model_name="u2net", model_path="models/u2net.onnx")
+session = new_session(model_name="u2net")
 
 @app.get("/")
 def home():
